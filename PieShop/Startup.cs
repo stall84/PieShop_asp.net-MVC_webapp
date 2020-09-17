@@ -27,8 +27,8 @@ namespace PieShop
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddScoped<ICategoryRepository, MockCategoryRepository>();
-            services.AddScoped<IPieRepository, MockPieRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IPieRepository, PieRepository>();
             services.AddControllersWithViews();
 
 
