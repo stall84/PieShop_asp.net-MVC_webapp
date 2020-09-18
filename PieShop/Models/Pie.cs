@@ -20,5 +20,6 @@ namespace PieShop.Models
         public bool InStock { get; set; }
         public int CategoryId { get; set; }
         public Category Category { get; set; }          // Each pie will be part of a category
+        public string Notes { get; set; }
     }
 }
